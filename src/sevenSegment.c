@@ -15,9 +15,9 @@ void sevenSegmentClear(void)
   PORTA &= ~((1 << PA1) | (1<<PA2) | (1 << PA3) | (1 << PA4) | (1 << PA5));
 }
 
-void sevenSegmentWrite(Encoder_t *encPtr)
+void sevenSegmentWrite(uint16_t d)
 {
-  int16_t value = encPtr->position;
+  int16_t value = d;
   uint8_t i = 5;
   while((digit(value, i) == 0) && (i != 1))
   {

@@ -5,6 +5,6 @@
 #include "rgbLed.h"
 
 void PWMInit(void);
-void PWMChange(RGBLed_t* ledPtr);
+void PWMChange(RGBLed_t* ledPtr, uint16_t d);
 
 #endif

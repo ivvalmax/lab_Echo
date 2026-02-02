@@ -10,7 +10,5 @@ typedef struct RGBLed{
 } RGBLed_t;
 
 void rgbLedInit(void);
-void rgbYellow(void);
-void rgbRed(void);
 
 #endif

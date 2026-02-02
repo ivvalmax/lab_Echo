@@ -9,8 +9,21 @@ void PWMInit(void)
   OCR3C = 0;
 }
 
-void PWMChange(RGBLed_t* ledPtr)
+void PWMChange(RGBLed_t* ledPtr, uint16_t d)
 {
+  if (d < 30) 
+  {
+    ledPtr->b = 0;
+    ledPtr->g = 1023;
+    ledPtr->r = 1023;
+  }
+  else
+  {
+    ledPtr->b = 0;
+    ledPtr->g = 0;
+    ledPtr->r = 1023;
+  }
+  
   OCR3AL = ledPtr->b;
   OCR3BL = ledPtr->g;
   OCR3CL = ledPtr->r;
