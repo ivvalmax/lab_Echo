@@ -12,6 +12,16 @@ void echoInit(void)
   DDRE = (1 << PE6);
 }
 
+void echoTrig(void)
+{
+  PORTE |= (1 << PE6);
+
+  TCNT1 = 0;
+  while(111 > TCNT1);
+
+  PORTE &= ~(1 << PE6);
+}
+
 ISR (INT7_vect)
 {
   if((PINE & (1<<7)) != 0) 

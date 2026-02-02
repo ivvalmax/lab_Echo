@@ -9,11 +9,14 @@ void rgbLedInit(void)
 
 void rgbYellow(void)
 {
-  OCR3A = ;
-  
+  OCR3A = 0;
+  OCR3B = 1023;
+  OCR3C = 1023;
 }
 
 void rgbRed(void)
 {
-  
+  OCR3A = 0;
+  OCR3B = 0;
+  OCR3C = 1023;  
 }

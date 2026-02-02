@@ -4,6 +4,7 @@
 #include "common.h"
 
 void echoInit(void);
+void echoTrig(void);
 
 
 #endif
