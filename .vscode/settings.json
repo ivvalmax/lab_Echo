@@ -1,0 +1,8 @@
+{
+  "AVR.reporter.arguments": [
+    "-A"
+  ],
+  "AVR.source.compiler": "c:\\Users\\xxx\\_avr-gcc-12.1.0_avrdude-7.0\\bin\\avr-gcc.exe",
+  "AVR.programmer.tool": "c:\\Users\\xxx\\_avr-gcc-12.1.0_avrdude-7.0\\bin\\avrdude.exe",
+  "AVR.source.libraries": []
+}
