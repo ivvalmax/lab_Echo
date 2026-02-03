@@ -31,8 +31,8 @@ ISR (INT7_vect)
   }
   else 
   { 
-    dist = TCNT1L;
-    dist |= (TCNT1H << 8);
+    dist = TCNT1;
   }
-  dist *= 100/65;
+  dist/=65;
+
 }

@@ -17,9 +17,7 @@ int main(void)
   while(1)
   {
     echoTrig();
-
-    _delay_ms(10);
-
+    
     sevenSegmentWrite(dist);
     PWMChange(&led, dist);
 
@@ -29,10 +27,9 @@ int main(void)
 void allInit(void)
 {
   echoInit();
-  encoderInit();
   PWMInit();
   rgbLedInit();
-  sevenSegment();
+  sevenSegmentInit();
 
   sei();
 }

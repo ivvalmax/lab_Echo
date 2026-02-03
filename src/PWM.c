@@ -11,7 +11,7 @@ void PWMInit(void)
 
 void PWMChange(RGBLed_t* ledPtr, uint16_t d)
 {
-  if (d < 30) 
+  if (d < 20) 
   {
     ledPtr->b = 0;
     ledPtr->g = 1023;
